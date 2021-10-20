@@ -1,0 +1,14 @@
+INSERT INTO `user`(`id`, `emp_name`, `sex`, `age`, `dept_name`, `emp_degree_name`) VALUES (1, '张一', '男', 25, '业务部', '本科');
+INSERT INTO `user`(`id`, `emp_name`, `sex`, `age`, `dept_name`, `emp_degree_name`) VALUES (2, '张二', '女', 13, '人事部', '本科');
+INSERT INTO `user`(`id`, `emp_name`, `sex`, `age`, `dept_name`, `emp_degree_name`) VALUES (3, '张三', '男', 26, '后勤部', '大专');
+INSERT INTO `user`(`id`, `emp_name`, `sex`, `age`, `dept_name`, `emp_degree_name`) VALUES (4, '张四', '女', 33, '业务部', '研究生');
+INSERT INTO `user`(`id`, `emp_name`, `sex`, `age`, `dept_name`, `emp_degree_name`) VALUES (5, '张五', '男', 35, '人事部', '大专');
+INSERT INTO `user`(`id`, `emp_name`, `sex`, `age`, `dept_name`, `emp_degree_name`) VALUES (6, '张六', '女', 56, '后勤部', '本科');
+INSERT INTO `user`(`id`, `emp_name`, `sex`, `age`, `dept_name`, `emp_degree_name`) VALUES (7, '张七', '男', 45, '业务部', '研究生');
+INSERT INTO `user`(`id`, `emp_name`, `sex`, `age`, `dept_name`, `emp_degree_name`) VALUES (8, '张八', '女', 27, '人事部', '本科');
+INSERT INTO `user`(`id`, `emp_name`, `sex`, `age`, `dept_name`, `emp_degree_name`) VALUES (9, '李一', '男', 55, '后勤部', '本科');
+INSERT INTO `user`(`id`, `emp_name`, `sex`, `age`, `dept_name`, `emp_degree_name`) VALUES (10, '李二', '女', 33, '业务部', '大专');
+INSERT INTO `user`(`id`, `emp_name`, `sex`, `age`, `dept_name`, `emp_degree_name`) VALUES (11, '王一', '男', 42, '后勤部', '大专');
+INSERT INTO `user`(`id`, `emp_name`, `sex`, `age`, `dept_name`, `emp_degree_name`) VALUES (12, '赵六', '女', 25, '业务部', '研究生');
+INSERT INTO `user`(`id`, `emp_name`, `sex`, `age`, `dept_name`, `emp_degree_name`) VALUES (13, 'aa', '男', 24, '人事部', '本科');
+INSERT INTO `user`(`id`, `emp_name`, `sex`, `age`, `dept_name`, `emp_degree_name`) VALUES (18, 'ccc', '女', 11, '人事部', '本科');
