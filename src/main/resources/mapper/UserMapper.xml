@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.project.mapper.UserMapper">
+
+    <select id="query" resultType="com.project.entity.Users">
+       select u.id , u.emp_name as empName ,u.sex,u.age,u.dept_name as deptName,u.emp_degree_name as empDegreeName from user u
+        <where>
+            <if test="empName!=null and empName!='' ">
+                and u.emp_name like '%${empName}%'
+            </if>
+        </where>
+    </select>
+    <select id="querySome" resultType="com.project.entity.Users">
+        select u.id , u.emp_name as empName ,u.sex,u.age,u.dept_name as deptName,u.emp_degree_name as empDegreeName from user u
+        <where>
+            <if test="empName!=null and empName!='' ">
+                and u.emp_name like '%${empName}%'
+            </if>
+        </where>
+    </select>
+    <insert id="add"  >
+        insert into user ( id,emp_name, sex, dept_name, age , emp_degree_name)
+        values (#{id},#{empName}, #{sex}, #{deptName},#{age},#{empDegreeName}
+        )
+    </insert>
+    <update id="update1">
+        update user set emp_name=#{empName},sex=#{sex},dept_name=#{deptName},age=#{age},emp_degree_name=#{empDegreeName}
+         where id=#{id}
+    </update>
+
+    <select id="queryData" resultType="com.project.entity.Users">
+       select u.id , u.emp_name as empName ,u.sex,u.age,u.dept_name as deptName,u.emp_degree_name as empDegreeName from user u
+    </select>
+</mapper>
