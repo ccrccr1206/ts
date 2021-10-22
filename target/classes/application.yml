@@ -1,0 +1,29 @@
+server:
+  port: 9000
+  servlet:
+    context-path: /test
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///et2104?serverTimezone=UTC
+    username: root
+    password: etoak
+
+  servlet:
+    multipart:
+      max-file-size: 1MB
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+# 自定义的配置项
+upload:
+  dir: e:/upload/et2104
+  path: /pic
+
+# 分页合理化参数，默认值为false。当该参数设置为 true 时，pageNum<=0 时会查询第一页， pageNum>pages（超过总数时），会查询最后一页。默认false 时，直接根据参数进行查询。
+pagehelper:
+  reasonable: true
